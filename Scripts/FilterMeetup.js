@@ -22,7 +22,6 @@
 'use strict';
 
 (function() {
-    'use strict';
 
     var blacklist = ["WuXingCMA","Expressive-Arts-Beginning-Anew-Finding-Forgiveness"];
     var blRegex = new RegExp(blacklist.join("|"));
