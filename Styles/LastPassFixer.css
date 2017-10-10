@@ -1,0 +1,10 @@
+@-moz-document url-prefix("https://www.vsecu.com/")
+{
+  #global-nav .html_panel.online-banking input#mysubmit
+  {
+    position: relative;
+    border-radius: 5px;
+    padding: .25em;
+    width: 100%;
+  }
+}
