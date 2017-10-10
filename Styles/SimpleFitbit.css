@@ -1,0 +1,8 @@
+@-moz-document domain("fitbit.com")
+{
+  .system-alert.beta_tiles_feedback,
+.wrapper-header-fma
+  {
+    display: none;
+  }
+}
