@@ -1,0 +1,24 @@
+@-moz-document domain("mint.com")
+{
+  .accounts-adv,
+.module-credit-score,
+.module-alert,
+.module-advice,
+.AdviceView,
+.accounts-data-li .error-status-message,
+#advice-top-container,
+.replace-with-iframe-below-header,
+.offer_widget_container,
+.account-header-wrapper .status,
+#transaction-deal-row,
+tr.deals,
+.HypothesisTestingView
+  {
+    display: none !important;
+  }
+
+  td.deals
+  {
+    background: transparent !important;
+  }
+}
