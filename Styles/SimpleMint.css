@@ -1,6 +1,5 @@
-@-moz-document domain("mint.com")
-{
-  .accounts-adv,
+@-moz-document domain("mint.com"), domain("mint.intuit.com") {
+.accounts-adv,
 .module-credit-score,
 .module-alert,
 .module-advice,
@@ -11,6 +10,8 @@
 .offer_widget_container,
 .account-header-wrapper .status,
 #transaction-deal-row,
+#TopTxnOfferWidgetContainer,
+.CardView.adviceWidget,
 tr.deals,
 .HypothesisTestingView
   {
