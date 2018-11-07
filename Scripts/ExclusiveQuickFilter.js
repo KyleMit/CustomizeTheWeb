@@ -1,9 +1,10 @@
 // ==UserScript==
 // @name         Exclusive Quick Filters
-// @namespace    http://tampermonkey.net/
+// @namespace    https://openuserjs.org/users/KyleMit
 // @version      1.0
 // @description  Deslect existing quick filters (unless holding shift or ctrl)
 // @author       KyleMit
+// @copyright    2018, KyleMit
 // @license      MIT
 // @match        https://ahs-jira-prod.ahs.state.vt.us/jira/*
 // @grant        none
@@ -13,6 +14,10 @@
 // @updateURL    https://github.com/KyleMit/CustomizeTheWeb/Scripts/ExclusiveQuickFilter.js
 // @supportURL   https://github.com/KyleMit/CustomizeTheWeb/issues
 // ==/UserScript==
+
+// ==OpenUserJS==
+// @author       KyleMit
+// ==/OpenUserJS==
 
 // User Script Notes:
 // assumes jQuery, but jira uses, so don't need @require https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js
@@ -35,4 +40,3 @@
     });
 
 })(jQuery);
-
