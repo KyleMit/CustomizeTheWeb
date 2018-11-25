@@ -3,10 +3,10 @@ A Collection of User Styles and User Scripts
 
 ### Download Style and Script Extensions for your browser:
 
-|                       | Chrome        | FF             |
-|-----------------------|---------------|----------------|
-| [Stylus (CSS)][1]     | [Download][2] | [Download][3]  |
-| [Tapermonkey (JS)][4] | [Download][5] | [Download][6]  |
+|                        | Chrome        | FF             |
+|------------------------|---------------|----------------|
+| [Stylus (CSS)][1]      | [Download][2] | [Download][3]  |
+| [Tampermonkey (JS)][4] | [Download][5] | [Download][6]  |
 
 
 [1]: https://add0n.com/stylus.html
