@@ -1,0 +1,60 @@
+@-moz-document url-prefix("https://ahs-jira-prod.ahs.state.vt.us/jira/secure/RapidBoard.jspa") {
+
+  /* highly tailored view of jira kanban to support 10 card columns 
+     when viewed over 3 monitors so the break points line up nicely 
+  */
+
+  #jira.ghx-header-compact {
+      zoom: 1.5;
+  }    
+
+  #jira.ghx-header-compact .aui-sidebar {
+      display: block;
+  }
+  #jira.ghx-header-compact .aui-sidebar-wrapper {
+      width: 314px !important;
+  }
+
+
+  #jira.ghx-header-compact #ghx-detail-view {
+      width: 309px !important;
+      display: table-cell !important;    /* always keep on to avoid shifting */
+      border-left: 1px solid #c1c7d0;
+  }
+
+  #jira.ghx-header-compact #ghx-detail-contents {
+      background: white; /* turn off left shading */
+      border: none;        /* border set on parent */
+  }
+
+  #jira.ghx-header-compact .ghx-detail-nav-menu {
+      display: none; /* hide nav items for space */
+  }
+
+  #jira.ghx-header-compact #js-detail-nav-content {
+      padding-left: 10px; /* without detail nav items, remove left padding */
+  }
+
+
+  #jira.ghx-header-compact .aui-sidebar-footer-tipsy {
+      display: none;
+  }
+
+
+  /* kanban */
+  #jira.ghx-header-compact .aui-sidebar~.aui-page-panel {
+      padding-left: 314px;
+  }
+
+
+  /* backlog */
+  #jira.ghx-header-compact.ghx-mode-planning  .aui-sidebar~.aui-page-panel {
+      margin-left: 1284px;
+      padding-left: 0;
+      max-width: 2555px;
+  }
+  #jira.ghx-header-compact.ghx-mode-planning #ghx-detail-view {
+      width: 1254px !important;
+      padding-left: 25px;
+  }
+}
