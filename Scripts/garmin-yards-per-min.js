@@ -5,7 +5,6 @@
 // @description  Automatically convert min/m to yards/min and display both
 // @author       KyleMit
 // @license      MIT
-// @icon         http://kylemitofsky.com/favicon.png
 // @run-at       document-end
 // @match        https://connect.garmin.com/modern/activity/*
 // @require      https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js
@@ -35,9 +34,9 @@ setTimeout(function() {
     var meter = parseInt(dataBit.split('/')[1]);
 
     // calculate
-    var mins = min + (sec/60);
+    var mins = min + (sec / 60);
     var yards = meter * 1.09361;
-    var yardsPerMin = Math.round(yards/min);
+    var yardsPerMin = Math.round(yards / min);
 
     // create new
     var $newDataBlock = $dataBlock.clone();
@@ -46,5 +45,5 @@ setTimeout(function() {
 
     // insert new
     $dataBlock.after($newDataBlock);
-    
+
 }, 10 * 1000);
