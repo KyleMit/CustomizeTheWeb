@@ -8,7 +8,6 @@
 // @icon         http://kylemitofsky.com/favicon.png
 // @run-at       document-end
 // @match        https://www.meetup.com/*
-// @require      https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js
 // @grant        none
 // @homepage    https://github.com/KyleMit/CustomizeTheWeb#readme
 // @homepageURL https://github.com/KyleMit/CustomizeTheWeb#readme
@@ -23,9 +22,11 @@
 
 (function() {
 
-    var blacklist = ["WuXingCMA","Expressive-Arts-Beginning-Anew-Finding-Forgiveness"];
-    var blRegex = new RegExp(blacklist.join("|"));
-    $("a").filter(function(i,el) { return (blRegex.test(el.href)); })
-	      .closest("li.event-listing")
-	      .remove();
+	var denylist = ["greater-burlington-bible-study"];
+	var denyTest = new RegExp(denylist.join("|"));
+	[...document.querySelectorAll("a")]
+	    .filter(el => denyTest.test(el.href))
+	    .map(el => el.closest("[data-testid='your-events-card']"))
+	    .forEach(el => el.remove())
+
 })();
